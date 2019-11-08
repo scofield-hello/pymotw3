@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "http://pypi.douban.com/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+
+[requires]
+python_version = "3.7"

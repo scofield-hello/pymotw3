@@ -31,6 +31,8 @@ if __name__ == '__main__':
     fmt = """
     FirstName is {FirstName}
     LastName is {LastName}
-    Escape {{}}
+    Escape {{}} 
     """
     print(fmt.format(**template_data))
+
+    

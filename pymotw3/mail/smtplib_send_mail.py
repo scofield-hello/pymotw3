@@ -52,7 +52,7 @@ def sendmail(credential: Credential, smtp: SmtpServer, message: Message):
 if __name__ == "__main__":
     password = getpass.getpass("请输入您的的邮箱密码: ")
     credential: Credential = ("username@mail.com", password)
-    smtpServer: SmtpServer = ("smtp.mxhichina.com", 465, True)
+    smtp: SmtpServer = ("smtp.mxhichina.com", 465, True)
     message: Message = ("author@mail.com", "发件人姓名", "recipient@mail.com",
                         "收件人姓名", "主题", "内容")
-    sendmail(credential=credential, smtp=smtpServer, message=message)
+    sendmail(credential=credential, smtp=smtp, message=message)
